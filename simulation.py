@@ -223,4 +223,3 @@ def metrics(trace, d, c):
             'effort_uT2_s':float(np.sum(u*u)*c.dt),
             'saturation_fraction':float(np.mean(np.abs(u)>=c.command_limit-1e-8)),
             'first_event_residual_uT':float(r[round(2./c.dt)])}
-

@@ -181,4 +181,3 @@ def completed_model(ref, trace, c, episode_index, candidate_id, selected_id):
     model.update({key:round(value,6) if isinstance(value,float) else value
                   for key,value in outcome.items()})
     return model
-

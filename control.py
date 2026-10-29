@@ -179,4 +179,3 @@ def residual_feedback_gate(optimized, online):
         return [],{'rewarded':False,'reasons':['mixed_frequency_and_residual_attribution_unproven'],
             'stimulus':'empty advance; no score0 candidate','isolated_causal_success_claimed':False}
     return feedback_gate(optimized,online)
-

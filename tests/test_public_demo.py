@@ -53,7 +53,7 @@ class FixtureSDK:
             rows.append({'candidate_id':key,'claim_key':a['claim_key'],'revision':1,
                          'evidence_id':'ev_'+f'{i:032x}','integrity_verified':True,'status':'observed','score':.8,
                          'excerpt':a['claim_key']+' declaration '+a['content']})
-        
+
         if self.store.inject_foreign and rows:
             rows[0]={**rows[0], 'candidate_id':'unconfirmed-foreign-model'}
         rows=rows[:request['limit']]

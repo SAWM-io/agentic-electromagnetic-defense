@@ -16,4 +16,3 @@ The hosted services supply memory and retrieval results. A local controller vali
 Physical implementations would require independent hardware protection, a local real-time control loop, authenticated configuration, sensor validation and a tested safe state. Cloud availability is not a substitute for those controls. Neither local cache timing nor numerical convergence establishes a hardware deadline.
 
 Report defects without secrets or customer data through the repository issues. For a sensitive issue, contact SAWM through the official website rather than posting exploitation details or access credentials publicly.
-

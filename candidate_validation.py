@@ -109,4 +109,3 @@ class _RecallView:
         if payload['semantic']!={'predicate':'declaration'}:raise ValueError('frozen_recall_semantic_contract_changed')
         payload['semantic']=copy.deepcopy(self.semantic)
         return self.adapter._call(operation,payload,validate)
-
