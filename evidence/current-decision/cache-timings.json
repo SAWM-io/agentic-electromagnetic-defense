@@ -1,0 +1,50 @@
+[
+  {
+    "episode_index": 44,
+    "samples": 300,
+    "hits": 300,
+    "misses": 0,
+    "p50_s": 8.33e-07,
+    "p95_s": 1.3770500000000004e-06,
+    "max_s": 1.3959e-05,
+    "http_overlap_proven": true,
+    "overlap_kind": "same_HTTP_attempt_without_response_headers_throughout_batch",
+    "timing_scope": "local get_snapshot only; offline wait excluded; HTTP hooks are dispatch-to-response-headers evidence, not server execution duration"
+  },
+  {
+    "episode_index": 45,
+    "samples": 300,
+    "hits": 300,
+    "misses": 0,
+    "p50_s": 3.75e-07,
+    "p95_s": 5e-07,
+    "max_s": 1.875e-06,
+    "http_overlap_proven": true,
+    "overlap_kind": "same_HTTP_attempt_without_response_headers_throughout_batch",
+    "timing_scope": "local get_snapshot only; offline wait excluded; HTTP hooks are dispatch-to-response-headers evidence, not server execution duration"
+  },
+  {
+    "episode_index": 46,
+    "samples": 300,
+    "hits": 300,
+    "misses": 0,
+    "p50_s": 1.042e-06,
+    "p95_s": 1.583e-06,
+    "max_s": 6.5e-06,
+    "http_overlap_proven": true,
+    "overlap_kind": "same_HTTP_attempt_without_response_headers_throughout_batch",
+    "timing_scope": "local get_snapshot only; offline wait excluded; HTTP hooks are dispatch-to-response-headers evidence, not server execution duration"
+  },
+  {
+    "episode_index": 47,
+    "samples": 300,
+    "hits": 300,
+    "misses": 0,
+    "p50_s": 9.59e-07,
+    "p95_s": 1.25e-06,
+    "max_s": 7.083e-06,
+    "http_overlap_proven": true,
+    "overlap_kind": "same_HTTP_attempt_without_response_headers_throughout_batch",
+    "timing_scope": "local get_snapshot only; offline wait excluded; HTTP hooks are dispatch-to-response-headers evidence, not server execution duration"
+  }
+]

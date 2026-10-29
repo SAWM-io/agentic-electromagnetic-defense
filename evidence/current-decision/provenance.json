@@ -1,0 +1,42 @@
+{
+  "publication_date": "2026-10-29",
+  "original_evidence_sha256": {
+    "summary.json": "61bebf9d007f0406cc95dbdbb11bafef9771b4e626f5e64559f9909e8f275615",
+    "episodes.json": "6817bd0ba847626e107c6c6b99ee5d33dddacb589490a4c841235ac3f5eb5e4a",
+    "decisions.json": "f86398e91f60ec54c0cca1511851b7a6ee3068f3002800fc9e14a778f84a7e3c",
+    "protocol.json": "d52a01847982847ea1a2e47dee28a2508c1820375a8722fef8ceb5052f878806",
+    "audit-current-decision.json": "e8973b8b38e67e22c01205ff773bbe236719ab274ba4498ddea9ebfda28e4663",
+    "traces.npz": "a12df808a47a7762bb42b7ae9d3f39538e13faffd8b305b33d0ce75cd31969d0",
+    "snapshots.json": "1caca8c1a306cbeb90bb944373bb74586440c33295b7a90581a9123ef52a6c32",
+    "cache_hot_reads.json": "155a52bde65072fa414ec9569eb0de401da3518a73d10252216d0d61d229b0fe"
+  },
+  "original_controller_source_sha256": {
+    "recent_memory_campaign.py": "493c40cd653491e4cb35ecede4d2e773b153e1946adafe1de9a4149d115e7d8c",
+    "tests/test_recent_memory_campaign.py": "434daec0bd0c80cbe681fbbb1e202d4aa2ecc7cf316ad2822daaa0adcdedbae1",
+    "typed_memory_reader.py": "0179b8ce12993166b33f77813624b2195ed4f8ee017b8decd5cfa7a2e4977c12",
+    "current_prefix_reference.py": "88b6a89a1d2aac5ccb8ec42265601301350aacdb4b7fd4b5b6514d9d5697a4a7",
+    "optimized_campaign.py": "52407dd281f000a69bc6460ed44b0aafb06c75e8bb50f974b4d610a034411ef3",
+    "optimized_controller.py": "84fac9ccd866cda6dc62e7628299d99baa3e98d354155414f957dc28bdf490f9",
+    "hybrid_controller.py": "291213ce79c63f6901c0ffecfca353891255bf905b3702d7a557a561856b4dd3",
+    "residual_experience.py": "ae7c5c25b94820371b95fd3b64c4863df8e5cb51da0d8d298918a852cf4aac4e",
+    "async_cloud_memory.py": "fff614545607b3646f65fd79901c4eca2ca62b0826a5b9c2fbd5091ee411ea89",
+    "cloud_memory.py": "d0feaa8cfec2f32d296425acf793fdefc7488b86c86e6a4d03d7601e3b8eaa5c",
+    "cloud_campaign.py": "db3cf9b179ccec44b836364e179a1c545a86751cf4beeac6387fa64d66995aae",
+    "cloud_hybrid_campaign.py": "d8d5e14095c54967a634eb5a6ae4b5cfdebe4cb87ae527291440c80dff92c26d",
+    "simulation.py": "40e32d1db8bd02916b46ad82758519d5727ab841a2b3a1d365aab6c53c146a4b",
+    "resume_optimized_campaign.py": "c6782e24d597791904a6c3ea76fc5f14837a3e247057acd09d9df899c4cacb75",
+    "targeted_cloud_recall.py": "342a8369c7ec72d1561c22041b91c976329077b15173304ef162cba172c96185"
+  },
+  "transformations": [
+    "Only selected numerical records exported; no raw Cloud request/response journals, Cloud scope identifiers, credentials or private implementation files.",
+    "Synthetic application candidate identities consistently renamed experience-NNN; NNN is the historical episode index plus one.",
+    "Numerical arrays copied byte-for-byte. Numerical metrics retained.",
+    "Protocol reduced to test methods and synthetic schedule. Host paths and account scope removed.",
+    "Private original receipt validation is reported by audit-summary.json; the public verifier does not authenticate the omitted Cloud receipts."
+  ],
+  "verification_layers": {
+    "original_private_audit": "44 checks, including original Cloud receipt identities and controller replay, all passed.",
+    "public_verifier": "Checks published file hashes, numerical metrics, causal forecast reconstruction and decisions against exported arrays; makes no Cloud calls.",
+    "fresh_demo": "A separate new demonstration must use new credentials/entities. It does not recreate the inherited44-episode memory state."
+  }
+}

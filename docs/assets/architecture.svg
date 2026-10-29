@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+<title id="title">Agentic Electromagnetic Defense — a memory-assisted control experiment</title>
+<desc id="desc">Simulated sensors feed a local bounded controller. Basira Cloud stores completed experience, TSST retrieves relevant versions, and ODVL supplies memory state. The controller validates recalled experience against present measurements before acting. Feedback records measured simulation outcomes.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#222"/></marker></defs>
+<rect width="1200" height="600" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#111">
+<text x="50" y="57" font-size="17" letter-spacing="3">SAWM × BASIRA</text>
+<text x="50" y="106" font-size="35" font-weight="700">Past experience. Present evidence. Bounded action.</text>
+<text x="50" y="142" font-size="18" fill="#555">A connected memory experiment — simulated physics, real Cloud APIs.</text>
+<rect x="50" y="198" width="270" height="147" rx="8" fill="#f2f2f2" stroke="#bbb"/>
+<text x="72" y="234" font-size="13" letter-spacing="2">01 / OBSERVE</text>
+<text x="72" y="271" font-size="23" font-weight="700">Simulated sensors</text>
+<text x="72" y="303" font-size="17">Recent measurements</text>
+<text x="72" y="326" font-size="17">No future samples</text>
+<rect x="465" y="198" width="270" height="147" rx="8" fill="#111"/>
+<text x="487" y="234" font-size="13" letter-spacing="2" fill="white">02 / CHECK &amp; DECIDE</text>
+<text x="487" y="271" font-size="23" font-weight="700" fill="white">Local controller</text>
+<text x="487" y="303" font-size="17" fill="white">Validate recalled experience</text>
+<text x="487" y="326" font-size="17" fill="white">Accept, bound or reject</text>
+<rect x="880" y="198" width="270" height="147" rx="8" fill="#f2f2f2" stroke="#bbb"/>
+<text x="902" y="234" font-size="13" letter-spacing="2">03 / ACT &amp; MEASURE</text>
+<text x="902" y="271" font-size="23" font-weight="700">Simulated actuator</text>
+<text x="902" y="303" font-size="17">Limited command</text>
+<text x="902" y="326" font-size="17">Residual and outcome</text>
+<path d="M320 270 H455 M735 270 H870" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="270" y="416" width="660" height="112" rx="8" fill="white" stroke="#222" stroke-width="2"/>
+<text x="300" y="451" font-size="22" font-weight="700">Basira Cloud  /  TSST  /  ODVL</text>
+<text x="300" y="483" font-size="17">Store completed experience · retrieve typed evidence · rank candidates</text>
+<text x="300" y="508" font-size="16" fill="#555">Private engines stay in the Cloud. Authenticated access only.</text>
+<path d="M1015 345 V470 H940" stroke="#222" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="1040" y="396" font-size="15">Feedback</text>
+<path d="M580 416 V356" stroke="#222" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="600" y="386" font-size="15">Validated local cache</text>
+<text x="50" y="571" font-size="15" fill="#555">No hardware protection, RF jamming resistance or EMP cancellation is demonstrated by this simulator.</text>
+</g></svg>

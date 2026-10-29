@@ -1,0 +1,141 @@
+{
+  "schema": "magnetic-recent-memory-current-decision/v1",
+  "seed": 68005,
+  "config": {
+    "dt": 0.002,
+    "duration": 4.0,
+    "coil_tau": 0.018,
+    "sensor_tau": 0.004,
+    "sensor_delay": 0.006,
+    "command_delay": 0.004,
+    "command_limit": 8.0,
+    "slew_per_second": 200.0,
+    "noise_std": 0.02,
+    "prefix": 0.75,
+    "update_period": 0.5,
+    "window": 0.75,
+    "forecast_lead": 0.032,
+    "minimum_std": 0.06,
+    "minimum_explained": 0.55,
+    "memory_candidates": 5
+  },
+  "episode_indices": [
+    44,
+    45,
+    46,
+    47
+  ],
+  "schedule": [
+    {
+      "episode_index": 44,
+      "observable_context": {
+        "device_id": "coilA"
+      },
+      "reference_dropout_s": null,
+      "generator_only": {
+        "gain": 0.78,
+        "tau_s": 0.03,
+        "frequency_hz": 1.61,
+        "noise_std": 0.02,
+        "phase": 0.3851977588502541,
+        "amplitude": 0.9851839709758912,
+        "noise_seed": 78005
+      }
+    },
+    {
+      "episode_index": 45,
+      "observable_context": {
+        "device_id": "coilB"
+      },
+      "reference_dropout_s": null,
+      "generator_only": {
+        "gain": 0.72,
+        "tau_s": 0.032,
+        "frequency_hz": 1.81,
+        "noise_std": 0.02,
+        "phase": 1.346732763225613,
+        "amplitude": 0.9338980930871472,
+        "noise_seed": 78102
+      }
+    },
+    {
+      "episode_index": 46,
+      "observable_context": {
+        "device_id": "coilA"
+      },
+      "reference_dropout_s": null,
+      "generator_only": {
+        "gain": 0.55,
+        "tau_s": 0.05,
+        "frequency_hz": 1.61,
+        "noise_std": 0.02,
+        "phase": -1.168410865504645,
+        "amplitude": 1.3254261125517193,
+        "noise_seed": 78199
+      }
+    },
+    {
+      "episode_index": 47,
+      "observable_context": {
+        "device_id": "coilA"
+      },
+      "reference_dropout_s": null,
+      "generator_only": {
+        "gain": 0.55,
+        "tau_s": 0.05,
+        "frequency_hz": 1.61,
+        "noise_std": 0.02,
+        "phase": 2.0870513120058938,
+        "amplitude": 0.9743045380094624,
+        "noise_seed": 78296
+      }
+    }
+  ],
+  "arms": [
+    "online",
+    "hybrid_v1",
+    "cached_hybrid",
+    "utility",
+    "optimized",
+    "fresh_current_response"
+  ],
+  "initial_confirmed_models": 44,
+  "behavior_policy": "optimized",
+  "shadow_comparison_arms": [
+    "online",
+    "hybrid_v1",
+    "cached_hybrid",
+    "utility",
+    "fresh_current_response"
+  ],
+  "controller_policy": "all five previous controller policies imported unchanged; extra fresh_current_response fits only current observed PI prefix as a separate shadow comparator",
+  "retrieval": "two typed TSST queries per current observable device: latest accepted experience and latest accepted ARX experience if distinct; otherwise second query is broad context. Bookkeeping selects identity only; control models originate exclusively in authenticated responses.",
+  "candidate_fairness": "one captured actual TSST union plus observed ODVL supplied to all six arms; local physical qualification and present PI prefix apply before memory use",
+  "residual_semantics": "effective response coefficients are estimates from simulated observed signals, not direct physical truth; old fit uncertainty and current-prefix rejection remain unchanged",
+  "forecast_evaluation": {
+    "horizon_s": 0.032,
+    "method": "after the episode, reconstruct each accepted decision prediction using only its observed-past fit and frozen chosen frequencies/weights, then compare to later measured reference; future measurements enter evaluation only",
+    "not_actuator_prediction": "gain correction changes FF, not the disturbance forecast; these effects are reported separately"
+  },
+  "fresh_reference": "fully memory-free comparator: online FF plus current-prefix calibration; never uses utility decisions or feeds shared memory; fit uses only376observations with actual current episode identity",
+  "network": {
+    "pacing_dispatch_spacing_s": 2.0,
+    "post_call_wait_s": 2.0,
+    "refresh_deadline_s": 20.0,
+    "refresh_wait_s": 30.0,
+    "TTL_s": 60.0,
+    "SDK_retries": 0,
+    "cache_per_episode": "two wrappers around the same two persistent HTTP clients, validators fixed to confirmed versions and index; capture, refresh, measure300gets, compute, await before write",
+    "http_overlap": "new passive request/response hooks distinguish a genuinely in-flight HTTP call from pacing/pending state; no claim if strict overlap proof is absent"
+  },
+  "limitations": [
+    "four dependent sequential episodes, descriptive only",
+    "simulated signals and plant, no hardware result",
+    "typed access addresses specific accepted memories; no claim of exhaustive or optimal semantic search",
+    "current-prefix calibration and Cloud memory are distinct evidence sources",
+    "no tuning after these four outcomes"
+  ],
+  "publication_status": "Sanitized protocol excerpt, not an original Cloud receipt",
+  "display_numbering": "Display episodes45..48 correspond to source indices44..47.",
+  "original_protocol_sha256": "d52a01847982847ea1a2e47dee28a2508c1820375a8722fef8ceb5052f878806"
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "episode_index": 44,
+    "display_episode": 45,
+    "observable_context": {
+      "device_id": "coilA"
+    },
+    "latest_target": "experience-044",
+    "latest_target_returned": true,
+    "returned_candidates": [
+      "experience-044",
+      "experience-023",
+      "experience-016",
+      "experience-028",
+      "experience-020",
+      "experience-022",
+      "experience-021",
+      "experience-017",
+      "experience-018",
+      "experience-003",
+      "experience-025"
+    ],
+    "calibration_applied": true,
+    "calibration_candidate": "experience-044",
+    "calibration_reason": "validated_past_response_and_current_PI_prefix",
+    "calibration_scale": 1.2,
+    "attempted": [
+      {
+        "candidate_id": "experience-044",
+        "decision": {
+          "applied": true,
+          "scale": 1.2,
+          "reason": "validated_past_response_and_current_PI_prefix",
+          "max_observed_step": 375,
+          "correction_start_step": 376,
+          "uses_future_observations": false,
+          "isolated_physical_benefit_claimed": false,
+          "current_prediction_nmse": 0.006307638833804526,
+          "current_response_gain_ratio": 1.022383523004979,
+          "current_bias_in_std": 0.010738641672702826,
+          "effective_gain": 0.72884462,
+          "approximate_gain_interval": [
+            0.67953013,
+            0.91433851
+          ],
+          "delay_samples": 14,
+          "experience_source_sha256": "ac16c5fbbb4b37d3a033b09bcbc14720ce8789c3de1c5137d3e33009c0e3e198"
+        }
+      }
+    ],
+    "maximum_command_delta_vs_utility": 0.0606257277232643
+  },
+  {
+    "episode_index": 45,
+    "display_episode": 46,
+    "observable_context": {
+      "device_id": "coilB"
+    },
+    "latest_target": "experience-042",
+    "latest_target_returned": true,
+    "returned_candidates": [
+      "experience-041",
+      "experience-042"
+    ],
+    "calibration_applied": true,
+    "calibration_candidate": "experience-041",
+    "calibration_reason": "validated_past_response_and_current_PI_prefix",
+    "calibration_scale": 1.2,
+    "attempted": [
+      {
+        "candidate_id": "experience-041",
+        "decision": {
+          "applied": true,
+          "scale": 1.2,
+          "reason": "validated_past_response_and_current_PI_prefix",
+          "max_observed_step": 375,
+          "correction_start_step": 376,
+          "uses_future_observations": false,
+          "isolated_physical_benefit_claimed": false,
+          "current_prediction_nmse": 0.04405258310337604,
+          "current_response_gain_ratio": 1.028561084741545,
+          "current_bias_in_std": 0.007705166310907659,
+          "effective_gain": 0.60384641,
+          "approximate_gain_interval": [
+            0.58156706,
+            0.6289233
+          ],
+          "delay_samples": 19,
+          "experience_source_sha256": "3f51ed3da5a4fde00376494b2b3112b60be35bf433616a26476acb6396abe772"
+        }
+      }
+    ],
+    "maximum_command_delta_vs_utility": 0.07070799938274819
+  },
+  {
+    "episode_index": 46,
+    "display_episode": 47,
+    "observable_context": {
+      "device_id": "coilA"
+    },
+    "latest_target": "experience-045",
+    "latest_target_returned": true,
+    "returned_candidates": [
+      "experience-045",
+      "experience-023",
+      "experience-016",
+      "experience-028",
+      "experience-020",
+      "experience-022",
+      "experience-021",
+      "experience-017",
+      "experience-018",
+      "experience-003",
+      "experience-025"
+    ],
+    "calibration_applied": false,
+    "calibration_candidate": null,
+    "calibration_reason": "no_returned_contextual_experience_validated_on_current_PI_prefix",
+    "calibration_scale": 1.0,
+    "attempted": [
+      {
+        "candidate_id": "experience-045",
+        "decision": {
+          "applied": false,
+          "scale": 1.0,
+          "reason": "old_response_inconsistent_with_current_PI_prefix",
+          "max_observed_step": 375,
+          "correction_start_step": 376,
+          "uses_future_observations": false,
+          "isolated_physical_benefit_claimed": false,
+          "current_prediction_nmse": 0.44171799001398293,
+          "current_response_gain_ratio": 0.6139392547336554,
+          "current_bias_in_std": 0.05386539806063124,
+          "effective_gain": 0.7455044,
+          "approximate_gain_interval": [
+            0.69473882,
+            0.87657161
+          ],
+          "delay_samples": 11,
+          "experience_source_sha256": "2e980676478c793c037a12ad1829c3ace8a31f374684e039aec83b698ecfb0d8"
+        }
+      }
+    ],
+    "maximum_command_delta_vs_utility": 0.0
+  },
+  {
+    "episode_index": 47,
+    "display_episode": 48,
+    "observable_context": {
+      "device_id": "coilA"
+    },
+    "latest_target": "experience-047",
+    "latest_target_returned": true,
+    "returned_candidates": [
+      "experience-045",
+      "experience-047"
+    ],
+    "calibration_applied": false,
+    "calibration_candidate": null,
+    "calibration_reason": "no_returned_contextual_experience_validated_on_current_PI_prefix",
+    "calibration_scale": 1.0,
+    "attempted": [
+      {
+        "candidate_id": "experience-045",
+        "decision": {
+          "applied": false,
+          "scale": 1.0,
+          "reason": "old_response_inconsistent_with_current_PI_prefix",
+          "max_observed_step": 375,
+          "correction_start_step": 376,
+          "uses_future_observations": false,
+          "isolated_physical_benefit_claimed": false,
+          "current_prediction_nmse": 0.453347564531809,
+          "current_response_gain_ratio": 0.6120586268092408,
+          "current_bias_in_std": 0.08500308000711118,
+          "effective_gain": 0.7455044,
+          "approximate_gain_interval": [
+            0.69473882,
+            0.87657161
+          ],
+          "delay_samples": 11,
+          "experience_source_sha256": "2e980676478c793c037a12ad1829c3ace8a31f374684e039aec83b698ecfb0d8"
+        }
+      }
+    ],
+    "maximum_command_delta_vs_utility": 0.0
+  }
+]
