@@ -39,8 +39,8 @@ The original laboratory suite passed 255 software tests. That count belongs to t
 ## How the loop works
 
 1. **Observe.** Read the current simulated sensor history. Future measurements and hidden simulator parameters are unavailable to the controller.
-2. **Retrieve.** Basira stores completed experiences. Typed TSST filters select the equipment and known experience identity, rather than relying on an identifier buried in a text search.
-3. **Compare.** ODVL supplies memory state for candidate ordering. The controller checks provenance, chronology, uncertainty and compatibility with current measurements.
+2. **Retrieve.** Basira stores completed experiences. TSST retrieves the relevant evidence.
+3. **Compare.** ODVL re-ranks memory. The controller checks provenance, chronology, uncertainty and compatibility with current measurements.
 4. **Act.** Apply a bounded correction only when the checks pass. Otherwise keep the baseline controller. Local command and slew limits still apply.
 5. **Learn from the outcome.** Store the completed observation, estimated response and measured result. At the next interaction, retrieve that experience and check it again.
 

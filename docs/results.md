@@ -44,8 +44,8 @@ Display episodes45–48 correspond to zero-based indices44–47 in the numerical
 ## What Basira, TSST and ODVL each do
 
 - **Basira Cloud:** records completed synthetic observations with provenance and versions. The newest version of each device was read again through a fresh connection.
-- **TSST:** returns candidates using explicit identity/provenance constraints. A previous text-only query could omit newly written experiences despite successful storage; typed recall corrected that selection issue.
-- **ODVL:** supplies the memory states used to order frequency candidates. Response calibration prioritizes recency, with ODVL only breaking ties. Unique episode indices mean this experiment does not isolate a causal ODVL benefit.
+- **TSST:** retrieves relevant evidence. A previous text-only query could omit newly written experiences despite successful storage; typed recall corrected that selection issue.
+- **ODVL:** re-ranks memory. Response calibration prioritizes recency, with ODVL only breaking ties. Unique episode indices mean this experiment does not isolate a causal ODVL benefit.
 - **Local controller:** qualifies candidates using observations already available, computes a bounded command, and measures its simulated result. It is a numerical policy, not an LLM reasoning process.
 
 The latest experience for the relevant device was returned in **4/4 cases**. Remembered response corrections were effective in **2/4 cases**. There were **1,200/1,200 successful cache reads**, with an HTTP request independently observed in flight during each of four measurement batches. These are local cache timings, not intrinsic server response times.

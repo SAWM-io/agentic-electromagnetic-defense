@@ -24,7 +24,7 @@ The loop is explicit:
 4. **Act** with a bounded correction—or keep the baseline when the evidence is insufficient.
 5. **Compare and record** the resulting observations for a later decision.
 
-Basira stores the completed experiences. TSST retrieves them through explicit identity filters. ODVL supplies memory state used in ranking frequency candidates. A local numerical controller calculates the command and enforces its limits. A language model is not issuing commands in this experiment.
+Basira stores the completed experiences. TSST retrieves the relevant evidence. ODVL re-ranks memory. A local numerical controller calculates the command and enforces its limits. A language model is not issuing commands in this experiment.
 
 We also found a practical integration problem: including an experience identifier in a text query did not ensure that the experience appeared in the returned top ten results. The stored data was present. Using the appropriate typed identity filters made the recent experiences accessible to the controller. Memory only helps if the relevant memory reaches the decision.
 
