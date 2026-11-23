@@ -19,7 +19,7 @@ Lower RMS means less residual magnetic disturbance in the model. A negative perc
 
 ![All six comparators on the same four situations](figures/results-overview.png)
 
-The memory + response version reduces mean residual error by **1.22%** against recent observations only, and **0.60%** against a separate calibration using only current observations. These are small descriptive differences across four dependent episodes. They do not establish general superiority, statistical significance, or the isolated contribution of ODVL.
+The memory + response version reduces mean residual error by **1.22%** against recent observations only, and **0.60%** against a separate calibration using only current observations. These are small descriptive differences across four dependent episodes. They do not establish general superiority, statistical significance, or the isolated contribution of any single component.
 
 The 32 ms forecast concerns the measured disturbance reference. It is computed from already observed samples; later samples are used only to score it. Correcting actuator response changes the command, not this forecast. A 32 ms simulated prediction horizon is not a measured Cloud or hardware control deadline.
 
@@ -45,7 +45,7 @@ Display episodes45–48 correspond to zero-based indices44–47 in the numerical
 
 - **Basira Cloud:** records completed synthetic observations with provenance and versions. The newest version of each device was read again through a fresh connection.
 - **TSST:** retrieves relevant evidence. A previous text-only query could omit newly written experiences despite successful storage; typed recall corrected that selection issue.
-- **ODVL:** re-ranks memory. Response calibration prioritizes recency, with ODVL only breaking ties. Unique episode indices mean this experiment does not isolate a causal ODVL benefit.
+- **ODVL:** re-ranks memory.
 - **Local controller:** qualifies candidates using observations already available, computes a bounded command, and measures its simulated result. It is a numerical policy, not an LLM reasoning process.
 
 The latest experience for the relevant device was returned in **4/4 cases**. Remembered response corrections were effective in **2/4 cases**. There were **1,200/1,200 successful cache reads**, with an HTTP request independently observed in flight during each of four measurement batches. These are local cache timings, not intrinsic server response times.

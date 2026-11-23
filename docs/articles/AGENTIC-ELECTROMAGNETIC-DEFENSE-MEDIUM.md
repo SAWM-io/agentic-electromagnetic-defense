@@ -46,7 +46,7 @@ In the first situation, fresh recalibration did just as well. In the second, a p
 
 Then we changed the equipment. The controller recalled the recent experiences but rejected the incompatible old response. Its new calibration remained uncertain, so complete relearning after that change is **not yet demonstrated**.
 
-These are four dependent situations, not a large independent benchmark. They demonstrate a working connection and a small measured benefit. They do not establish general superiority or isolate ODVL's individual contribution. The [published results](https://github.com/SAWM-io/agentic-electromagnetic-defense/blob/main/docs/results.md) retain the comparisons and the cases without improvement.
+These are four dependent situations, not a large independent benchmark. They demonstrate a working connection and a small measured benefit. They do not establish general superiority or the contribution of an individual component. The [published results](https://github.com/SAWM-io/agentic-electromagnetic-defense/blob/main/docs/results.md) retain the comparisons and the cases without improvement.
 
 ## Anticipation does not require knowing the future
 

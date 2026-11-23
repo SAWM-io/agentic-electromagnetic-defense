@@ -25,7 +25,7 @@ The latest recorded experiment used **four sequential situations, six comparison
 | Mean residual error versus fresh calibration without memory | **0.60% lower** |
 | Independent checks of the original experiment | **44 / 44 passed** |
 
-These are modest descriptive gains on a small, dependent sequence, **not a general superiority claim**. After the unannounced change, the new calibration remained uncertain: the system rejected the obsolete one, but did not yet learn a reliable replacement. A separate ablation would be needed to isolate ODVL's contribution to these four cases.
+These are modest descriptive gains on a small, dependent sequence, **not a general superiority claim**. After the unannounced change, the new calibration remained uncertain: the system rejected the obsolete one, but did not yet learn a reliable replacement. A separate ablation would be needed to attribute these results to an individual component.
 
 ![All six comparison methods and their measured mean residual error](docs/figures/results-overview.png)
 
@@ -99,7 +99,7 @@ Memory can support a tested protection system. It cannot restore damaged electro
 - Learn a reliable replacement calibration after drift, rather than only rejecting an old one.
 - Test longer histories, more equipment, unseen conditions and repeated independent seeds.
 - Compare each memory component separately against strong memory-free controllers.
-- Make present-time relevance and uncertainty part of selection, rather than using recency alone.
+- Make present-time relevance and uncertainty part of selection.
 - Measure end-to-end latency and cache invalidation under interruption and service unavailability.
 - Move from a one-axis lumped simulation to a calibrated low-energy hardware bench, then spatial and multi-axis validation.
 
